@@ -1,0 +1,16 @@
+.downarrow{
+    animation: hop-arrow  1s  linear infinite;
+}
+
+@keyframes hop-arrow{
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(15px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+a{
+    cursor:pointer;
+}
