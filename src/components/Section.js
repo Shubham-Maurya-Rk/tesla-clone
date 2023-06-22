@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 function Section({ title, bgimg, desp }) {
   return (
-    <Wrap bgImage={bgimg}>
+    <Wrap bgImage={bgimg}  style={{backgroundImage: 'url('+(process.env.PUBLIC_URL)+'/images/'+bgimg+')'}}>
       <Fade bottom>
       <ItemText>
         <h1>{title}</h1>
@@ -38,7 +38,6 @@ export default Section
 const Wrap = styled.div`
 width: 100vw;
 height: 100vh;
-background-image: url('/tesla-clone/images/${props => props.bgImage}') !important;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
