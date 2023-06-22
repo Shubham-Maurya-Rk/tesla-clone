@@ -41,7 +41,7 @@ height: 100vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-background-image: url(${process.env.PUBLIC_URL}'/images/${props => props.bgImage}');
+background-image: url('https://shubham-maurya-rk.github.io/tesla-clone/images/${props => props.bgImage}');
 display:flex;
 justify-content:space-between;
 flex-direction:column;
