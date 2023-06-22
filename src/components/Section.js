@@ -41,7 +41,7 @@ height: 100vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-background-image: url('/images/${props => props.bgImage}');
+background-image: url(${process.env.PUBLIC_URL}'/images/${props => props.bgImage}');
 display:flex;
 justify-content:space-between;
 flex-direction:column;
