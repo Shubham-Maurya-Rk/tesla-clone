@@ -38,10 +38,10 @@ export default Section
 const Wrap = styled.div`
 width: 100vw;
 height: 100vh;
+background-image: url('/tesla-clone/images/${props => props.bgImage}') !important;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-background-image: url('/tesla-clone/images/${props => props.bgImage}');
 display:flex;
 justify-content:space-between;
 flex-direction:column;
